@@ -41,6 +41,18 @@ Once all the servers are up and running, send a request to the api_a server.
  
 Assert that response status code is 200 and the body is an array of strings with lengths of 8. 
 
+Here is the exmaple command. 
+
+```
+curl -k https://localhost:7441/v1/data
+```
+
+And the result is
+
+```
+["API D: Message 1","API D: Message 2","API C: Message 1","API C: Message 2","API B: Message 1","API B: Message 2","API A: Message 1","API A: Message 2"]
+```
+
 ### Build Feature Branch
 
 ### Test with external services
