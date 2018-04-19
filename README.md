@@ -4,9 +4,9 @@ This organization is created for Jenkins multiple repositories POC.
 
 Requirements:
 
-### Build multiple repositories from develop branch
+### Build multiple repositories from three branches
 
-Need to build the develop branch of 
+Need to build at the same time for develop, feature1 and feature2 branches of 
 
 - light-4j
 - openapi-parser
@@ -16,7 +16,7 @@ Need to build the develop branch of
 - light-example-4j/rest/swagger/ms_chain/api_c/httpschain
 - light-example-4j/rest/swagger/ms_chain/api_d/httpschain
 
-Note that these repositories have to be built in a shared workspace so that artifacts can be shared by subsequent maven tasks. 
+Note that these repositories have to be built in a shared workspace for the same branch so that artifacts can be shared by subsequent maven tasks. It will not work to push the artifact to any centralized artifact repository as the code in three branches are not compatible. 
 
 
 ### End to end test for ms_chain APIs
